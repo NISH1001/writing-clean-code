@@ -1,0 +1,53 @@
+# intro
+Hello everyone. I am Nishan and I am a computer engineer.
+
+# what is clean code
+-> clean code is subjective and every developer has a personal take on it. 
+-> There are some ideas that are considered best practice and what constitutes as clean code within the industry and community, 
+-> but there is no definitive distinction. 
+-> And I don’t think there ever will be.
+
+# clean vs dirty -> cost per change
+-> clean code? sounds good on theory, right?
+-> but i have a deadline. i don't have time for thinking
+-> we run into this all the time. we have deadline pressure
+-> "they" telling us to get it done by tomorrow..by friday...
+-> suddenly...we're working on long hours 
+-> we rush to go faster -> ducttape from here and there -> insert hacks here and there -> might work for some time. 
+-> outcome -> big ball of mud
+-> but what happens is it's slowing us down. There are more bugs.
+-> we have to fix it. make the changes we had done few days/weeks ago during those deadlines.
+-> we end up spending more time refactoring, tweaking or just looking into the abyss.
+
+# ducttape programmer
+During deadlines, we tend to do certain coding hacks and end up just taping up the the codes.
+
+# read:write ratio
+- 10:1
+
+# responsible for the code
+-> not the client, not the supervisor, not your partner.
+
+# proper name
+-> use meaningful names
+
+# coding convention
+-> consistency
+-> easier for collaboration
+-> reduce cost for software maintenance
+
+# comments
+-> don't overuse
+
+# documentation
+-> good
+
+# modularity
+-> reusability
+-> roles
+-> prevent code duplication
+
+
+# Don't overuse OOP 
+Stop worrying so much about the objects. 
+Concentrate on satisfying the principles of object orientation rather than object-izing everything

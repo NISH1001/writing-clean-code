@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Writing Clean Code</title>
+
+		<meta name="description" content="Experience">
+		<meta name="author" content="Paradox">
+
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../css/print/pdf.css' : '../../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <div style="font-size: 2.8em">Writing<br><font color="#f03"><span style="font-size:1.3em"> Clean</span></font> Code</div>
+                    <div>
+                    <span style="font-size: 0.6em;"><font color="#fff">Nishan Pantha / <i>@nishparadox</i></font></span> <br>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>What This Talk Is Not About</h2>
+                    </section>
+                    <section>
+                        <p class="fragment fade-in"><strike>Comprehensive Guide for Clean Code</strike></p>
+                        <p class="fragment fade-in"><strike>Guide for Becoming a Good Programmer</strike></p>
+                        <p class="fragment fade-in"><strike>Making You Better in Python</strike></p>
+                        <p class="fragment fade-in"><strike>Software Engineering</strike></p>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>Sharing Experiences</h3>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Things That Matter</h2>
+                    </section>
+
+                    <section>
+                        <img src="./images/problem-solution.jpg"></img>
+                    </section>
+
+                    <section>
+                        <p><span style="font-size:1.3em">Don't Think Complex</span></p>
+                        <img src="./images/simplicity.jpg"></img> </section>
+
+                    <section>
+                        <h2><strike>Languages</strike><font color="#f03" class="fragment fade-in">
+                                <span style="font-size:1.0em"> Concepts</span></font> </h2>
+                        <img src="./images/languages.jpg"></img>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Clean, You Say?</h2>
+                    </section>
+
+                    <section>
+                        <img src="./images/good-bad.png" width="800" height="550"></img>
+                    </section>
+
+                    <section>
+                        <img src="./images/code-sucks.jpg"></img>
+                    </section>
+
+                    <section>
+                        <img src="./images/cleanVsDirty.jpg"></img>
+                    </section>
+
+                    <section>
+                        <p><span style="font-size:0.8em">"We programmers think we spend most of our time power typing. </span></p>
+                        <p class="fragment grow"><span style="font-size:0.8em; color: #42a5f5">We Don't.</span></p>
+                        <p><span style="font-size:0.8em">We spend most of our time looking into the abyss."</span></p>
+                        <br>
+                        <p><span style="font-size:1.3em; color:#dce775">- Douglas Crockford</span></p>
+                    </section>
+
+                </section>
+
+                <section>
+                    <p><span style="font-size:1.3em">You are responsible for your own code</span></p>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Proper Names</h2>
+                    </section>
+
+                    <section>
+                        <h3>Less Code-to-Mental Mapping</h3>
+                        <img src="./images/variables.jpg" height="550" width="500"></img>
+                    </section>
+
+                    <section data-markdown>
+                        <textarea data-template>
+                            ```python
+                            ```
+                        </textarea>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Coding Convention</h2>
+                    </section>
+
+                    <section >
+                        <h3>Follow PEP8 for Python</h3>
+                        <div data-markdown>
+                            <textarea data-template>
+                                ```python
+                                # use underscore
+                                def fetchLyrics(lyricsName):
+                                    pass
+
+                                myLyrics = fetchLyrics("smells like coding spirit")
+                                ```
+                            </textarea>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Comments Are Expensive</h2>
+                        <p class="fragment fade-in"><span style="font-size:1.0em; color: red">Do not Overuse</span></p>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+	                        ```python
+                            # first point
+	                        point1 = 4
+                            # second point
+                            point2 = 9
+                            # find sum
+                            result = sum(point1, point2)
+                            ```
+	                    </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Documentation</h2>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Modularity</h2>
+                    </section>
+
+                    <section>
+                        <h2>DRY</h3>
+                        <p><span style="font-size:0.8em; color: #90caf9">Don't Repeat Yourself</span></p>
+                        <img src="./images/dry.jpg"></img>
+                    </section>
+
+                    <section>
+                        <p><span style="font-size:1.2em; color: white">Get Out Of OOP Zone Sometimes</span></p>
+                        <img src="./images/functionalize.jpg"></img>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Don't Overuse OOP</h2>
+                    </section>
+
+                    <section>
+                        <p><span style="font-size:1.2em; color: white">Needless Layers of Abstraction</span></p>
+                    </section>
+
+                    <section>
+                        <p><span style="font-size:1.2em; color: white">Simple Things Don't Need OOP</span></p>
+                    </section>
+
+                    <section data-markdown>
+                        <textarea data-template>
+	                        ```python
+                            class Adder:
+                                def __init__(self):
+                                    pass
+                                def __call__(self, x, y):
+                                    return x+y
+
+                            # cheers to this
+                            def add(x, y):
+                                return x+y
+
+                            # why make things complex this way?
+                            adder = Adder()
+
+                            print(adder(1, 1))
+                            print(add(2, 3))
+                            ```
+	                    </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Code <span style="color: red">Smell</span></h2>
+                    <img src="./images/code-smell.jpg" height="500"></img>
+                </section>
+
+                <section>
+                    <h3>The Code Death</h3>
+                    <img src="./images/software-engineer.jpg"></img>
+                </section>
+
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <h2>Read Others' Code</h2>
+                </section>
+
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <h2>Learn. Learn. Learn.</h2>
+                </section>
+
+
+            </div>
+
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../../plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
